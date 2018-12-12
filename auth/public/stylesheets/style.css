@@ -1,0 +1,15 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+a {
+  color: #00B7FF;
+}

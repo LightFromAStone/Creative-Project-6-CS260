@@ -1,0 +1,106 @@
+nohup: ignoring input
+before / Route
+Connected
+(node:27204) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:42:42.617Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m15.570 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.594 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.610 ms - -[0m
+[0mGET /user/profile [36m304 [0m17.846 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:43:33.978Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m2.828 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.888 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.393 ms - -[0m
+[0mGET /user/profile [36m304 [0m16.498 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:43:46.363Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.580 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m3.163 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m5.336 ms - -[0m
+[0mGET /user/profile [36m304 [0m4.167 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:43:48.486Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.705 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.559 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.153 ms - -[0m
+[0mGET /user/profile [36m304 [0m2.556 ms - -[0m
+/user Route
+[0mGET /user [32m200 [0m7.587 ms - 1223[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.272 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.706 ms - -[0m
+[0mGET /user/profile [36m304 [0m3.422 ms - -[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:43:52.431Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m1.932 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m2.062 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.942 ms - -[0m
+[0mGET /user/profile [36m304 [0m1.574 ms - -[0m
+[0mGET http://5.188.210.12/echo.php [33m404 [0m2.106 ms - 199[0m
+/ Route
+Session {
+  cookie: 
+   { path: '/',
+     _expires: 2019-01-07T10:43:54.875Z,
+     originalMaxAge: 2628000000,
+     httpOnly: true },
+  user: '5c083b56cd5d6e205ad4c477',
+  username: 'mike',
+  msg: 'Authenticated as mike',
+  color: 'Green' }
+/ Route if user
+[0mGET / [36m304 [0m2.275 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.568 ms - -[0m
+[0mGET /javascripts/my_app.js [36m304 [0m1.657 ms - -[0m
+[0mGET /user/profile [36m304 [0m2.075 ms - -[0m
