@@ -43,13 +43,25 @@
         </nav>
         
     <div class="form-container" ng-controller="myController">
-        <p id="sectionTitle" class="form-header">User Profile</p>
+      <div class='welcome'>
+        <p id="sectionTitle" class="form-header"><strong>User Profile</strong></p>
         <form method="POST" action="/user/update" ng-submit="castVote()">
+          
+          
             <label>Username:</label>
             <input type="text" id="username" name="username" ng-model="user.username" disabled><br>
             <label>Email:</label>
-            <input type="email" id="email" name="email" ng-model="user.email"><br>          
+            <input type="email" id="email" name="email" ng-model="user.email"><br>   
             
+            <button class='btn btn-outline-primary btn-sm' type="submit" id="save" value="Save">Save</button>
+        
+      </div>
+            
+          
+          
+          <div class='card mx-auto'>
+            <div class='card-header text-center'><strong>Vote Here</strong></div>
+            <div class='card-body'>
               <div class="form-check">
                   <label class="form-check-label">
                     <input type="radio" id="color" class="form-check-input" name="color" value="Nutrition Calculator" ng-model="user.color">Nutriton Calculator
@@ -66,9 +78,16 @@
                   <label class="form-check-label">
                     <input type="radio" id="color" class="form-check-input" name="color" value="Simple Chat" ng-model="user.color">Simple Chat
                   </label>
-              </div><br>
+              </div>
               
-            <input type="submit" id="save" value="Save">
+            </div>
+          </div>
+            
+        
+            <div class='card mx-auto'>
+            <button class='btn btn-outline-primary' type="submit" id="save" value="Submit Vote">Submit Vote</button>
+              
+            </div>
             
             
             
@@ -76,10 +95,10 @@
         </form>
     </div>
     <form method="POST" action="/user/delete">
-        <input type="submit" id="delete" value="Delete User">
+        <button class='btn btn-outline-danger btn-sm float-right' type="submit" id="delete" value="Delete User">Delete User</button>
     </form>
     <hr>
-    <span id="userMsg">
+    <span id="userMsg" class='welcome'>
     <%= msg %>
     </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>

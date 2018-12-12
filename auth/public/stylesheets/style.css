@@ -12,6 +12,25 @@ body {
 
 .card {
   width: 20rem;
+  margin-top: 3rem;
+}
+
+.welcome {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.signup {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.instruction {
+  width: 25rem;
+}
+
+#delete {
+  margin: 5rem;
 }
 
 a {

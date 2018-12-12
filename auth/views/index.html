@@ -35,7 +35,8 @@
                 </li>
             </ul>
         </nav>
-            
+        
+        <div class='welcome'>
         <h2 id="welcomeText">Welcome back, 
             <%= username %>!
         </h2>
@@ -44,8 +45,13 @@
     You voted for: 
         <%= color %>
       </span>
+      <br><br>
+      <p class='instruction'><strong>What to do: </strong>Listed below are 3 projects from earlier in the semster. Click on each one to check it out. Then come back here to vote on which one you like best!</p>
+            
+        </div>
+            
       
-     <div class='card'>
+     <div class='card mx-auto'>
         <div class='card-body'>
          <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -61,9 +67,13 @@
         <span class="badge badge-primary badge-pill"><%= chatCount %></span>
       </li>
     </ul>
-            
         </div>
      </div>
+     
+        
+         <a class='card mx-auto' href='/user'>
+         <button type="button" class="btn btn-outline-primary">Vote Here</button>
+         </a>
      
       
         </div>

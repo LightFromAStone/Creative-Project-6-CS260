@@ -32,21 +32,25 @@
                 </li>
             </ul>
         </nav>
-        <div class="form-container">
-            <p class="form-header">Login</p>
+        <div class="form-container welcome">
+            <p class="form-header"><strong>Login</strong></p>
             <form method="POST" action="/login">
                 <label>Username:</label>
                 <input type="text" id="username" name="username"><br>
                 <label>Password:</label>
                 <input type="password" id="password" name="password"><br>
-                <input type="submit" id="login" value="Login">
+                <button class='btn btn-outline-primary btn-sm' type="submit" id="login" value="Login">Login</button>
             </form>
         </div>
+
+     <div class='signup'>
         <a id="signUpLink" href="/signup">Sign Up</a>
         <hr>
         <span id="loginMsg">
         <%= msg %>
         </span>
+     </div>
+
     </div>
 </body>
         

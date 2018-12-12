@@ -33,8 +33,8 @@
             </ul>
         </nav>
         
-        <div class="form-container">
-            <p class="form-header">Sign Up</p>
+        <div class="form-container welcome">
+            <p class="form-header"><strong>Sign Up</strong></p>
             <form method="POST" action="/signup">
                 <label>Username:</label>
                 <input type="text" id="username" name="username"><br>
@@ -42,13 +42,17 @@
                 <input type="password" id="password" name="password"><br>
                 <label>Email:</label>
                 <input type="email" id="email" name="email"><br>
-                <input type="submit" id="register" value="Register">
+                <button class='btn btn-outline-primary btn-sm' type="submit" id="register" value="Register">Register</button>
             </form>
         </div>
+        
+        <div class='signup'>
         <hr>
         <span id="signupMsg">
         <%= msg %>
         </span>
+            
+        </div>
         </div>
 
 </body> 

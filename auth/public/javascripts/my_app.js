@@ -11,8 +11,16 @@ angular.module('myApp', []).
       $scope.error = data;
     });
     
-    $scope.numNutrition = 0;
-    $scope.numPokemon = 0;
-    $scope.numChat = 0;
+    $scope.hideUser = function() {
+      console.log('hiding user');
+      $scope.userIsHidden = true;
+      $scope.voteIsHidden = false;
+    };
+      
+    $scope.hideVoting = function() {
+      console.log('hiding voting');
+    $scope.userIsHidden = false;
+    $scope.voteIsHidden = true;
+    }
     
   }]);
