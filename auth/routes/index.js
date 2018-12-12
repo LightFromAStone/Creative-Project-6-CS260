@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var expressSession = require('express-session');
+var mongoose = require('mongoose'),
+    User = mongoose.model('User');
 
 var users = require('../controllers/users_controller');
 console.log("before / Route");
@@ -8,11 +10,31 @@ router.get('/', function(req, res){
     console.log("/ Route");
 //    console.log(req);
     console.log(req.session);
+    
+    User
+    .find()
+    .exec((error, users) => {
+      const nutritionCount = users.reduce((runningTotal, user) => {
+        return user.color === 'Nutrition Calculator' ? runningTotal + 1 : runningTotal
+        
+        const pokemonCount = users.reduce((runningTotal, user) => {
+        return user.color === 'Pokemon Simulator' ? runningTotal + 1 : runningTotal
+        
+        const chatCount = users.reduce((runningTotal, user) => {
+        return user.color === 'Simple Chat' ? runningTotal + 1 : runningTotal
+      }, 0)
+
+      // Repeate the above for each vote.
+    
     if (req.session.user) {
       console.log("/ Route if user");
       res.render('index', {username: req.session.username,
                            msg:req.session.msg,
-                           color:req.session.color});
+                           color:req.session.color,
+                           nutritionCount,
+                           pokemonCount,
+                           chatCount});
+                           
     } else {
       console.log("/ Route else user");
       req.session.msg = 'Access denied!';

@@ -69,6 +69,7 @@ exports.updateUser = function(req, res){
   .exec(function(err, user) {
     user.set('email', req.body.email);
     user.set('color', req.body.color);
+    user.set('vote', req.body.vote);
     user.save(function(err) {
       if (err){
         res.sessor.error = err;

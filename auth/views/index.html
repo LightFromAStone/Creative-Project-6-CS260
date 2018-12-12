@@ -45,22 +45,26 @@
         <%= color %>
       </span>
       
-     <p></p>
-     
+     <div class='card'>
+        <div class='card-body'>
          <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <a href="http://lightfromastone.me/Creative-Project-2-CS260/" target="_blank">Nutrition Calculator</a>
-        <span class="badge badge-primary badge-pill">{{numNutrition}}</span>
+        <span class="badge badge-primary badge-pill"><%= nutritionCount %></span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <a href="http://lightfromastone.me/Creative-Project-3-CS260/Pokemon.html" target="_blank">Pokemon Simulator</a>
-        <span class="badge badge-primary badge-pill">{{numPokemon}}</span>
+        <span class="badge badge-primary badge-pill"><%= pokemonCount %></span>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <a href="http://lightfromastone.me:4200/" target="_blank">Simple Chat</a>
-        <span class="badge badge-primary badge-pill">{{numChat}}</span>
+        <span class="badge badge-primary badge-pill"><%= chatCount %></span>
       </li>
     </ul>
+            
+        </div>
+     </div>
+     
       
         </div>
     </div>

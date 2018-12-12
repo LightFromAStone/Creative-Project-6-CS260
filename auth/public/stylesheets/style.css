@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+.card {
+  width: 20rem;
+}
+
 a {
   color: #00B7FF;
 }
