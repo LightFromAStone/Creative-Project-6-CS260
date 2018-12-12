@@ -16,13 +16,15 @@ router.get('/', function(req, res){
     .exec((error, users) => {
       const nutritionCount = users.reduce((runningTotal, user) => {
         return user.color === 'Nutrition Calculator' ? runningTotal + 1 : runningTotal
+        }, 0)
         
         const pokemonCount = users.reduce((runningTotal, user) => {
         return user.color === 'Pokemon Simulator' ? runningTotal + 1 : runningTotal
+        }, 0)
         
         const chatCount = users.reduce((runningTotal, user) => {
         return user.color === 'Simple Chat' ? runningTotal + 1 : runningTotal
-      }, 0)
+        }, 0)
 
       // Repeate the above for each vote.
     
@@ -34,7 +36,7 @@ router.get('/', function(req, res){
                            nutritionCount,
                            pokemonCount,
                            chatCount});
-                           
+                           //add three vote totals here
     } else {
       console.log("/ Route else user");
       req.session.msg = 'Access denied!';
