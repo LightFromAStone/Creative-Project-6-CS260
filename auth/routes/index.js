@@ -42,6 +42,7 @@ router.get('/', function(req, res){
       req.session.msg = 'Access denied!';
       res.redirect('/login');
     }
+    })
 });
 router.get('/user', function(req, res){
     console.log("/user Route");
